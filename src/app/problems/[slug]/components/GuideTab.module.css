@@ -1,0 +1,157 @@
+.container {
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-bottom: 8px;
+}
+
+.content {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--foreground);
+}
+
+.content h1, .content h2, .content h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.content p {
+  margin-bottom: 12px;
+}
+
+.content ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.content code {
+  background: var(--card-bg);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85em;
+}
+
+.section {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.sectionTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--foreground);
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.taskItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.taskItem input[type="checkbox"] {
+  margin-top: 4px;
+  accent-color: var(--accent-primary);
+}
+
+.taskText {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.questionList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.questionItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.questionText {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.optionLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.optionLabel:hover {
+  color: var(--foreground);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 80px;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 8px;
+  color: var(--foreground);
+  font-family: inherit;
+  font-size: 0.85rem;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+}
+
+.nextBtn {
+  margin-top: auto;
+  background-color: var(--accent-primary);
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.15s ease;
+}
+
+.nextBtn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.nextBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow: hidden;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 220px 1fr 380px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.errorState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 16px;
+}
+
+.errorState a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+}
+
+.loadingState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--text-muted);
+}

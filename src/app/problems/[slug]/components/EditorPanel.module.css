@@ -1,0 +1,72 @@
+.editorContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #0d1117;
+  overflow: hidden;
+}
+
+.tabBar {
+  display: flex;
+  background-color: #1c2128;
+  height: 40px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.tabBar::-webkit-scrollbar {
+  height: 2px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  height: 100%;
+  background-color: transparent;
+  color: var(--text-muted);
+  border: none;
+  border-right: 1px solid var(--card-border);
+  font-size: 0.85rem;
+  cursor: pointer;
+  min-width: 120px;
+  border-top: 2px solid transparent;
+}
+
+.tab.active {
+  background-color: #0d1117;
+  color: var(--foreground);
+  border-top: 2px solid var(--accent-primary);
+}
+
+.closeBtn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.closeBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--foreground);
+}
+
+.editorWrapper {
+  flex: 1;
+  position: relative;
+}
+
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
