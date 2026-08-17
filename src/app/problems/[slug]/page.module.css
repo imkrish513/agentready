@@ -12,7 +12,13 @@
   display: grid;
   grid-template-columns: 220px 1fr 380px;
   flex: 1;
+  min-height: 0;
   overflow: hidden;
+}
+
+.workspace > * {
+  min-height: 0;
+  min-width: 0;
 }
 
 .errorState {

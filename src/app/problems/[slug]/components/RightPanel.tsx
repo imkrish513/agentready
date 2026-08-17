@@ -53,7 +53,11 @@ export default function RightPanel({
           disabled={!phase?.aiAccessEnabled}
           title={!phase?.aiAccessEnabled ? "AI Assistant is not available in this phase" : ""}
         >
-          AI Assist {!phase?.aiAccessEnabled && '🔒'}
+          AI Assist {!phase?.aiAccessEnabled && (
+            <svg viewBox="0 0 16 16" width="11" height="11" fill="currentColor" style={{ opacity: 0.5 }}>
+              <path d="M11 5V4a3 3 0 0 0-6 0v1H4v7h8V5h-1zM6 4a2 2 0 1 1 4 0v1H6V4z"/>
+            </svg>
+          )}
         </button>
       </div>
 
