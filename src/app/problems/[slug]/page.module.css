@@ -11,6 +11,7 @@
 .workspace {
   display: grid;
   grid-template-columns: 220px 1fr 380px;
+  grid-template-rows: minmax(0, 1fr);
   flex: 1;
   min-height: 0;
   overflow: hidden;
